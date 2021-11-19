@@ -9,7 +9,7 @@ def get_object_or_none(Model, pk):
         return None
 
 
-class TodoListViewSet(ModelViewSet):
-    queryset = models.TodoList.objects.all()
-    serializer_class = serializers.TodoListSerializer
+class TodoViewSet(ModelViewSet):
+    queryset = models.Todo.objects.all()
+    serializer_class = serializers.TodoSerializer
    
